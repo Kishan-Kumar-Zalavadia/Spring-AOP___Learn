@@ -29,4 +29,9 @@ public class LogginAspect {
     public void afterReturning(int retVal){
         System.out.println("After Returning: "+retVal);
     }
+
+    @AfterReturning(value = "execution(* *.*.quantity(..))", returning = "retVal")
+    public void afterReturning2(int retVal){
+        System.out.println("After Returning-2: "+retVal);
+    }
 }
