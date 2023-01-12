@@ -18,4 +18,8 @@ public class ShoppingCart {
         //AOP is used to separate Business-Login with Cross-Cutting-Concerns
 
     }
+
+    public int quantity(){
+        return 9;
+    }
 }
